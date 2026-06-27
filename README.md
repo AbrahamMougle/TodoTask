@@ -1,2 +1,5 @@
-# TodoTask
-Created with CodeSandbox
+### 📝 Basculer vers des méthodes non modifiantes (Défi 3 sur 4) : Réécriture des gestionnaires d'événements pour respecter l'immutabilité
+
+- **Problème résolu :** Les gestionnaires d'événements `handleAddTodo`, `handleChangeTodo` et `handleDeleteTodo` utilisaient des méthodes modifiantes (`push`, affectation directe, `splice`) qui mutent l'état directement sans déclencher de rendu. Réécriture de ces fonctions en utilisant des méthodes non modifiantes pour que l'ajout, la modification et la suppression des tâches fonctionnent correctement.
+- **Compétence acquise :** Maîtrise des opérations immutables sur les tableaux d'objets en React : utilisation de la syntaxe de spread (`[...todos]`) ou de `concat()` pour l'ajout, `map()` pour la modification conditionnelle, et `filter()` pour la suppression. Compréhension de l'importance de créer de nouvelles références de tableau pour déclencher les rendus React.
+- **Lien vers le code :** [Cliquez ici pour voir l'exercice](https://fr.react.dev/learn/updating-arrays-in-state)
